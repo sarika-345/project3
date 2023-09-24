@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<h1>About</h1>
+<table class="table table-bordered">
+    <tr>
+        <th>Cover</th>
+        <td><img src="{{b.cover.url}}" height="200px"width="300px"></td>
+        </tr>
+    <tr>
+        <th>TITLE</th>
+    <td>{{b.title}}</td></tr>
+        <tr><th>Description</th>
+            <td>{{b.desc}}</td></tr>
+    <tr><th>Name of director</th>
+            <td>{{b.name}}</td></tr>
+    <tr><th>Date of release</th>
+            <td>{{b.date}}</td></tr>
+    <tr><th>Rating of movie</th>
+            <td>{{b.rating}}</td></tr>
+        </tr>
+</table>
+<a href="{% url 'update' b.id %}" class="btn btn-warning">update</a>
+    <a href="{% url 'delete' b.id %}" class="btn btn-warning">delete</a>
+{% endblock %}

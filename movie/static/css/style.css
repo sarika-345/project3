@@ -1,0 +1,10 @@
+body{
+background-color:#8a7274;
+}
+.navbar-light .navbar-brand {
+    color:#080447;
+    font-weight:bold;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #b30914;
+}
